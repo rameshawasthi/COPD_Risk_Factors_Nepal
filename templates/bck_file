@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPD Prediction</title>
+</head>
+<body>
+    <h2>COPD Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender (Male/Female):</label><br>
+        <input type="text" id="gender" name="gender" required><br><br>
+
+        <label for="smoking_status">Smoking Status (Current/Former/Never):</label><br>
+        <input type="text" id="smoking_status" name="smoking_status" required><br><br>
+
+        <label for="biomass_fuel_exposure">Biomass Fuel Exposure (0 or 1):</label><br>
+        <input type="text" id="biomass_fuel_exposure" name="biomass_fuel_exposure" required><br><br>
+
+        <label for="occupational_exposure">Occupational Exposure (0 or 1):</label><br>
+        <input type="text" id="occupational_exposure" name="occupational_exposure" required><br><br>
+
+        <label for="family_history_copd">Family History of COPD (0 or 1):</label><br>
+        <input type="text" id="family_history_copd" name="family_history_copd" required><br><br>
+
+        <label for="bmi">BMI:</label><br>
+        <input type="text" id="bmi" name="bmi" required><br><br>
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="air_pollution_level">Air Pollution Level:</label><br>
+        <input type="text" id="air_pollution_level" name="air_pollution_level" required><br><br>
+
+        <label for="respiratory_infections_childhood">Respiratory Infections in Childhood (0 or 1):</label><br>
+        <input type="text" id="respiratory_infections_childhood" name="respiratory_infections_childhood" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
