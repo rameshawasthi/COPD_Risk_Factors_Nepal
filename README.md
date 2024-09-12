@@ -3,19 +3,24 @@
 This repository focuses on predicting Chronic Obstructive Pulmonary Disease (COPD) diagnosis in Nepal using a machine learning model. The project leverages patient data and various risk factors for early identification, potentially aiding in timely intervention and management of COPD in Nepal.
 
 Data Source and Structure:
+
 •	Sources: The data was obtained from a variety of online sources including research articles, social media, the Ministry of Health and Population of Nepal, and health-related sites such as Open Data Nepal.
+
 •	Features:
+
 o	Demographics: Age, Gender
 o	Lifestyle factors: Smoking Status, Biomass Fuel Exposure, Occupational Exposure
 o	Medical history: Family History of COPD, Respiratory Infections in Childhood
 o	Health indicators: BMI
 o	Environmental factors: Location, Air Pollution Level
 o	Target variable: COPD Diagnosis (binary: 0 = No COPD, 1 = COPD)
+
 No missing values were present, and categorical features were encoded for model training.
+
 Model and Performance:
 •	A Logistic Regression model was used to predict COPD diagnosis.
 •	Performance metrics:
-o	Accuracy: 
+Accuracy: 
 o	Precision: 
 o	Recall: 
 o	F1-Score: 
